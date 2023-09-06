@@ -10,3 +10,13 @@ if app.is_palindrome( 'dog' ):
     print('Test failed')
 else:
     print('Test passed')
+
+if app.is_palindrome( 'robber' ):
+    print('Test failed')
+else:
+    print('Test passed')
+
+if app.is_palindrome( 'i' ):
+    print('Test passed')
+else:
+    print('Test failed')
