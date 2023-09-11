@@ -1,5 +1,6 @@
 
 def is_palindrome(string):
-    if string[0] == string[-1]:
-        return True
+    for i, c in enumerate(string):
+        if string[i] == string[len(string)-i-1]:
+            return True
     return False
