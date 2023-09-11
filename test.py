@@ -1,22 +1,18 @@
 
 import app
 
-if app.is_palindrome( 'mom' ):
-    print('Test passed')
-else:
-    print('Test failed')
-
-if app.is_palindrome( 'dog' ):
-    print('Test failed')
-else:
-    print('Test passed')
-
-if app.is_palindrome( 'robber' ):
-    print('Test failed')
-else:
-    print('Test passed')
-
-if app.is_palindrome( 'i' ):
-    print('Test passed')
-else:
-    print('Test failed')
+test_cases = [
+    ('mom', True),
+    ('dog', False),
+    ('robber', False),
+    ('i', True),
+    ('mm', True),
+    ('my', False),
+    ('_+_', True),
+    ('Aa', False)
+ ]
+for test_value, expected_result in test_cases:
+    if app.is_palindrome(test_value) == expected_result:
+        print('Test passed')
+    else:
+        print('Test failed')
