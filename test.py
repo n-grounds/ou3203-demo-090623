@@ -1,6 +1,11 @@
 
 import app
 
+###########################
+# unit tests for the is_palindrome
+# function
+###########################
+
 if app.is_palindrome( 'mom' ):
     print('Test passed')
 else:
